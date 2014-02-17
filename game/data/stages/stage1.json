@@ -1,0 +1,20 @@
+{"frames": [
+
+{
+	"filename": "stage2.bmp",
+	"frame": {"x":2,"y":2,"w":640,"h":480},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":480},
+	"sourceSize": {"w":640,"h":480}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "stage1.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:65427dd29ef4bcb9fb95dd9091b7523e:b1663f2d1348e5ba7d9c250010467c91:f628e8d8bf5d316d9bef797917b4a3f0$"
+}
+}

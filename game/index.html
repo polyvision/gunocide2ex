@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Gunocide ][ EX</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+    h1{
+      color: white;
+    }
+  </style>
+  <script src="js/pixi.dev.js"></script>
+  <script src="js/mousetrap.min.js"></script>
+  <script src="js/stage_background.js"></script>
+  <script src="js/player_ship.js"></script>
+  <script src="js/player.js"></script>
+</head>
+<body>
+  <h1>Gunocide II EX Final Turbo Edition - RESURRECTION</h1>
+
+  <script>
+
+  // create an new instance of a pixi stage
+    var stage = new PIXI.Stage(0x66FF99);
+ 
+    // create a renderer instance.
+    var renderer = PIXI.autoDetectRenderer(800, 600);
+ 
+    // add the renderer view element to the DOM
+    document.body.appendChild(renderer.view);
+ 
+    requestAnimFrame( animate );
+ 
+    var stage_background = new StageBackground("data/stages/stage1.png",800,600);
+    stage.addChild(stage_background);
+
+    var player = new Player(stage);
+    player.load_assets();
+
+    /*
+    // create a texture from an image path
+    var texture = PIXI.Texture.fromImage("data/banshee/normal.png");
+    // create a new Sprite using the texture
+    var bunny = new PIXI.Sprite(texture);
+ 
+    // center the sprites anchor point
+    bunny.anchor.x = 0.5;
+    bunny.anchor.y = 0.5;
+ 
+    // move the sprite t the center of the screen
+    bunny.position.x = 200;
+    bunny.position.y = 150;
+ 
+    stage.addChild(bunny);*/
+ 
+    function animate(delta) {
+        requestAnimFrame( animate );
+ 
+         // render the stage   
+        renderer.render(stage);
+        player.update(delta)
+    }
+
+    Mousetrap.bind('left', function(){
+      player.move_left();
+    },'keydown');
+
+    Mousetrap.bind('right', function(){
+      player.move_right();
+    },'keydown');
+
+    Mousetrap.bind('left', function(){
+      player.stop_movementX();
+    },'keyup');
+
+    Mousetrap.bind('right', function(){
+      player.stop_movementX();
+    },'keyup');
+
+    Mousetrap.bind('up', function(){
+      player.move_up();
+    },'keydown');
+
+    Mousetrap.bind('down', function(){
+      player.move_down();
+    },'keydown');
+
+    Mousetrap.bind('up', function(){
+      player.stop_movementY();
+    },'keyup');
+
+    Mousetrap.bind('down', function(){
+      player.stop_movementY();
+    },'keyup');
+  </script>
+
+  </body>
+</html>

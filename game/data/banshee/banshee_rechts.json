@@ -1,0 +1,60 @@
+{"frames": {
+
+"banshee_rechts1.png":
+{
+	"frame": {"x":63,"y":2,"w":59,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":7,"w":59,"h":43},
+	"sourceSize": {"w":65,"h":61}
+},
+"banshee_rechts2.png":
+{
+	"frame": {"x":2,"y":2,"w":59,"h":47},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":7,"w":59,"h":47},
+	"sourceSize": {"w":65,"h":61}
+},
+"banshee_rechts3.png":
+{
+	"frame": {"x":2,"y":51,"w":49,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":7,"w":49,"h":43},
+	"sourceSize": {"w":65,"h":61}
+},
+"banshee_rechts4.png":
+{
+	"frame": {"x":63,"y":47,"w":49,"h":45},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":8,"w":49,"h":45},
+	"sourceSize": {"w":65,"h":61}
+},
+"banshee_rechts5.png":
+{
+	"frame": {"x":88,"y":94,"w":33,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":7,"w":33,"h":43},
+	"sourceSize": {"w":65,"h":61}
+},
+"banshee_rechts6.png":
+{
+	"frame": {"x":53,"y":94,"w":33,"h":47},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":7,"w":33,"h":47},
+	"sourceSize": {"w":65,"h":61}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "banshee_rechts.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":256},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:432ee731bc8378eb125ecc66843c944c:b7ccbc41c7786f3724914db142e2f9e1:b6148106d2d8b3efac97b02f66513e90$"
+}
+}
